@@ -5,7 +5,8 @@ import {
   MdHome,
   MdLock,
   MdOutlineShoppingCart,
-  MdProductionQuantityLimits,
+  MdContactMail,
+  MdArticle,
 } from 'react-icons/md';
 
 // Admin Imports
@@ -66,16 +67,42 @@ const routes: IRoute[] = [
   },
   {
     name: 'Products',
-    layout: '/rtl',
-    path: '/rtl-default',
+    layout: '/',
+    path: 'products',
     icon: (
       <Icon
-        as={MdProductionQuantityLimits}
+        as={MdOutlineShoppingCart}
         width="20px"
         height="20px"
         color="inherit"
       />
     ),
+  },
+  {
+    name: 'Contact Form',
+    layout: '/',
+    path: 'contact',
+    icon: (
+      <Icon as={MdContactMail} width="20px" height="20px" color="inherit" />
+    ),
+  },
+  {
+    name: 'Blog 1',
+    layout: '/',
+    path: 'blog/1',
+    icon: <Icon as={MdArticle} width="20px" height="20px" color="inherit" />,
+  },
+  {
+    name: 'Blog 2',
+    layout: '/',
+    path: 'blog/2',
+    icon: <Icon as={MdArticle} width="20px" height="20px" color="inherit" />,
+  },
+  {
+    name: 'Blog 3',
+    layout: '/',
+    path: 'blog/3',
+    icon: <Icon as={MdArticle} width="20px" height="20px" color="inherit" />,
   },
 ];
 
